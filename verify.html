@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Confirmation</title>
+    <link rel="stylesheet" href="verify.css">
+   
+</head>
+<body>
+
+    <div>
+        <div class="user-details">
+            <h2 style="margin-top: 50px; padding-bottom: 2px;">User Details</h2>
+            <h4>Username:</h4>
+            <h4>E-Mail:</h4>
+            <h4>Phone:</h4>
+            <h4>Category:</h4>
+        </div>
+        <div class="grab-tickets">
+            <h2>Grab Your <span style="color: red;">Tickets</span></h2>
+            <div class="event-name-amount" style="margin-bottom: 20px;">
+                <div class="event-name">
+                    <span style="color: #ff1e00; font-size: larger; font-weight: bolder;">
+                        <script>
+                            const ticketCount = localStorage.getItem("ticketCount") || 0;
+                            document.write(ticketCount);
+                        </script>
+                        x
+                    </span>
+                    <script>
+                        const eventarea = localStorage.getItem("eventarea") || "N/A";
+                        document.write(eventarea);
+                    </script> <br>
+             <script>
+                const eventLocation = localStorage.getItem("location") || "N/A";
+                document.write(eventLocation);
+            </script>
+             <br>
+                    <script>
+                        const eventday = localStorage.getItem("eventday") || "N/A";
+                        document.write(eventday);
+                    </script>  <br>
+                </div>
+                <div style="margin-left: 40px;">
+                    <script>
+                        const totalAmount = localStorage.getItem("totalAmount") || 0;
+                        document.write(`₹${totalAmount}`);
+                    </script>
+                </div>
+            </div>
+            <hr style="width: 30%; margin-left: 100px;">
+            <div class="event-name-amount" style="margin-top: 20px;">                    
+                <div class="event-name">
+                    Extra Charges
+                </div>
+                <div style="margin-left: 100px;">
+                    <script>
+                        const exchr = localStorage.getItem("exchr") || "N/A";
+                        document.write(`₹${exchr}`);
+                    </script>
+                </div>
+            </div>
+            <div class="event-name-amount" style="margin-top: 50px;">
+                <div class="event-name">
+                    <h2>Total Amount</h2>
+                </div>
+                <div>
+                    <h2>
+                        <script>
+                            const totalAmountWithCharges = localStorage.getItem("totalAmountWithCharges") || 0;
+                            document.write(`₹${totalAmountWithCharges}`);
+                        </script>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="event-button">
+            <button style="background-color: white; font-size: larger;">Cancel</button>
+            <button style="background-color: rgb(222, 94, 39); color: white; font-size: larger;">Proceed</button>
+        </div>
+    </div>
+</body>
+</html>

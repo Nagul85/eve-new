@@ -1,0 +1,400 @@
+
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 2px solid #cccccc;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+input:hover {
+    border-color: #F6496F;
+    border-radius: 25px;
+}
+
+::placeholder {
+    color: rgb(133, 140, 151);
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #FFF6B7 0%, #F6496F 100%);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: medium;
+}
+#stuentcheckbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically center */
+    margin: 20px;
+}
+
+#stuentcheck > div {
+    display: flex; /* Enable flex layout */
+    align-items: center; /* Align items vertically center */
+}
+
+#stuentcheckbox > div label {
+    margin-right: 10px; /* Add space between label and checkbox */
+}
+
+
+
+.logo img {
+    width: 100px;
+    height: 40px;
+
+}
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.logo {
+    max-width: 95%;
+    padding: 20px;
+    border-radius: 50px 50px 0px 0px;
+    background: linear-gradient(90deg, #FFF6B7 0%, #F6496F 100%);
+    color: white;
+    text-align: center;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* register student start  */
+
+.form-group {
+    margin-bottom: 11px !important;
+}
+
+.sign {
+    margin-bottom: 15px !important;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+.button {
+    border-radius: 20px;
+}
+
+.form-group div {
+    height: 55px;
+}
+
+
+
+.container-form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 99vh; */
+    /* background-color: #f0f0f0;  */
+  
+  } 
+  .stuenthead {
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    border-radius: 20px;
+    max-width: 600px; /* Adjust as needed */
+    z-index: 99999;
+  }
+  
+  /* .container {
+    margin-top: 20px;
+  } */
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* border-radius: 5px; */
+    outline: none;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  #stuentcheckbox {
+    margin-top: 20px;
+  }
+  
+  #stuentcheckbox div {
+    display: flex;
+    align-items: center;
+  }
+  
+  #stuentcheckbox div a {
+    color: rgb(40, 136, 165);
+  }
+  
+  #stuentuser {
+    margin-left: auto;
+  }
+  
+  .sign input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(40, 136, 165);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sign input[type="submit"]:hover {
+    background-color: rgb(32, 115, 140);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .stuenthead {
+      width: 95%;
+      top: 0px;
+      position: absolute;
+    }
+  }
+  
+  
+  .cirlcee-img  .img-elipse{
+    position: absolute;
+    bottom: 57%;
+      /* left: 2%; */
+  }
+  
+  
+  .cirlcee-img  .img-elipsenew{
+    position: absolute;
+    bottom: 53%;
+      left: 65%;
+  }
+  
+  
+  .cirlcee-img .ploygen {
+    position: absolute;
+    bottom: 6%;
+      left: 1%;
+  }
+  
+  .cirlcee-img .left-ploygen {
+    position: absolute;
+    bottom: 78%;
+      left: 7%;
+  }
+
+
+   /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .cirlcee-img  .img-elipse{
+    display: none;
+  }
+  
+  .cirlcee-img  .img-elipsenew{
+    display: none;
+  }
+  
+  .cirlcee-img .ploygen {
+    display: none;
+  }
+  
+  .cirlcee-img .left-ploygen {
+    display: none;
+  }
+  
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .cirlcee-img  .img-elipse{
+    display: none;
+  }
+  
+  .cirlcee-img  .img-elipsenew{
+    display: none;
+  }
+  
+  .cirlcee-img .ploygen {
+    display: none;
+  }
+  
+  .cirlcee-img .left-ploygen {
+    display: none;
+  }
+  
+    
+  }
+  
+
+/* register student end   */
+
+
+.password-container {
+  position: relative;
+}
+
+.field-icon {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  right: 11px;
+  cursor: pointer;
+}
+
+
+
+
+/* google sign up button start   */
+
+.login-with-google-btn {
+  transition: background-color .3s, box-shadow .3s;
+    
+  padding: 27px 0px 12px 42px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+  
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+  
+  &:hover {
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+  }
+  
+  &:active {
+    background-color: #eeeeee;
+  }
+  
+  &:focus {
+    outline: none;
+    box-shadow: 
+      0 -1px 0 rgba(0, 0, 0, .04),
+      0 2px 4px rgba(0, 0, 0, .25),
+      0 0 0 3px #c8dafc;
+  }
+  
+  &:disabled {
+    filter: grayscale(100%);
+    background-color: #ebebeb;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+    cursor: not-allowed;
+  }
+}
+
+/* google sign up button end  */
+
+
+
+
+
+
+
+
+
+/* 
+28-05 update end  */
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+ 
+  margin: 10% auto;
+  padding: 20px;
+
+  width: 30%;
+}
+
+.close {
+  color: #ffffff;
+  /* float: right; */
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  left: 20px;
+  top: 55px;
+}
+
+
+.close:hover,
+.close:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container-login {
+  background-color: white;
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+
+
+.relative-position {
+  position: relative;
+}
+
+.material-icons-outlined {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #555; /* Adjust color as needed */
+  pointer-events: none; /* Ensure icon doesn't interfere with input */
+}
+/* 
+28-05 update end  */

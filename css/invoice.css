@@ -1,0 +1,440 @@
+@charset "UTf-8";
+@import url(https://fonts.googleapis.com/css?font-family="Open+Sans:300, 400, 700");
+
+body{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	line-height: 1.42em;
+	color: #A7A1AE;
+
+
+}
+h1{
+    font-size: 2em;
+    font-weight: 300;
+    /* text-align: center;
+    display: block; */
+
+}
+h2 a{
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FB667A;
+	text-decoration: none;
+
+}
+.blue{color: #185875;}
+.yellow{color: #FfF842;}
+
+.container-table th h1{
+	font-weight: bold;
+	font-size: 1em;
+	text-align: left;
+	color: #ffffff;
+
+}
+.container-table td{
+	font-weight: normal;
+	font-size: 1em;
+	-webkit-box-shadow:0 2px 2px-2px #0E1119;
+	-moz-box-shadow:0 2px 2px -2px #0E1119;
+
+
+}
+.container-table{
+	text-align: left;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+	display: table;
+
+}
+
+.container-half {
+    text-align: left;
+	overflow: hidden;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.container-table td, .container-table th{
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 2%;
+
+
+}
+
+
+
+@media(max-width: 800px){
+	.container-table td:nth-child(4),
+	.container-table th:nth-child(4){display: none;}
+
+	}
+
+
+    tr th  {   width: 35%;   }
+
+    tr td  {  color: black;  }
+
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+   }
+    .card{
+       max-width: 370px;
+       width: 370px;
+        background: #FB7373;
+        padding: 30px;
+         border-radius: 3px;
+        box-sizing: border-box;
+        color: #FFF;
+        margin:20px;
+         box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+         border-radius: 20px;
+   }
+    .card:nth-child(2){
+       background: #4181ee;
+   }
+    .card:last-child{
+       background: #FB7373;
+
+   }
+    .card-title{
+        margin-top: 0;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+   }
+    .card-content{
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        line-height: 1.5;
+   }
+    .card-btn{
+        all: unset;
+        display: block;
+        margin-left: auto;
+        border: 2px solid #FFF;
+        padding: 10px 15px;
+        border-radius: 25px;
+        font-size: 10px;
+        font-weight: 600;
+        transition: all 0.5s;
+        cursor: pointer;
+        letter-spacing: 1.2px;
+   }
+    .card-btn:hover{
+       color:#02b875;
+       background: #FFF;
+   }
+    .card:nth-child(2) .card-btn:hover{
+       color:#4181ee;
+       background: #FFF;
+   }
+    .card:last-child .card-btn:hover{
+       color:#673ab7;
+        background: #FFF;
+   }
+   
+   .live-concert {
+    color: #070303;
+   }
+
+   .invoice-text .invoice {
+    font-size: 30px;
+    color: #000000;
+   }
+
+   .invoice-text .order-no h4  {
+    color: #000000;
+   }
+
+   .order-date {
+    border: none;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .button {
+    background-color: #FB7373;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 9px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* .invoice-overall {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+} */
+
+
+
+
+/* invoice amount start  */
+
+.invoice-details{
+    left: 50px;
+    position: relative;
+    font-family: sans-serif;
+    width: 92%;
+}
+.invoice-list{
+    display: inline-flex;
+    position: relative;
+    gap: 250px;
+    list-style: none;
+    background-color: #FB7373;
+    ;
+    padding-right: 70px;
+    padding-top: 20px;
+}
+.invoice-heading{
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    top: -8px;
+    position: relative;
+}
+.invoice-heading-ticket{
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    top: -8px;
+    left: 50px;
+    position: relative;
+}
+.invoice-list-details{
+    display: inline-flex;
+    position: relative;
+    gap: 245px;
+    list-style: none;
+    padding-right: 70px;
+    padding-top: 20px;
+}
+.invoice-heading-details{
+    font-size: 17px;
+    font-weight: 600;
+    top: -8px;
+    position: relative;
+}
+.sub-total{
+    position: relative;
+    left: 1060px;
+    top: 10px;
+    font-weight: 600;
+    width: 130px;
+}
+.sub-total-amount{
+    position: relative;
+    left: 1360px;
+    top: -10px;
+    font-weight: 600;
+    width: 130px;
+}
+.total{
+    position: relative;
+    left: 1060px;
+    top: 10px;
+    font-weight: 600;
+    width: 130px;
+}
+.total-amount{
+    position: relative;
+    left: 1360px;
+    top: -10px;
+    font-weight: 600;
+    width: 130px;
+}
+  
+
+/* invoice amount end   */
+
+
+ /* navbar start  */
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+}
+
+.menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.navbar a{
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+    color: #117964;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #aaa;
+        overflow: scroll;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+}
+
+@media (max-width: 500px){
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+}
+
+ /* navbar end   */

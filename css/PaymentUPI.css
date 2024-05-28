@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fffce9 10%, #ffd0db 80%);
+  
+}
+
+.container {
+    width: 900px;
+    padding: 80px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #FFF6B7 0%, #F6416C 100%);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container p {
+    color: black;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.eventpayment {
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.eventpayment-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-input {
+    position: relative;
+}
+
+.dropdown-input input {
+    width: 200px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-input.open .dropdown-menu {
+    display: block;
+}
+
+#img img {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+.bg {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.bg img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+#btn{
+    border-radius: 12px;
+    padding: 5px;
+    width: 110px;
+background-color: rgb(255, 231, 225);
+border-color: rgb(255, 231, 225);
+}
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    vertical-align: middle;
+    margin-right: 800px;
+  color: black;
+}
+#btn2{
+    border-radius: 10px;
+    background-color: rgb(255, 231, 225);
+    color: black;
+}

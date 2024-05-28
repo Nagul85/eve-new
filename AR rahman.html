@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR RAHMAN MUSIC CONCERT</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/event.css">
+</head>
+<body>
+
+<div class="event-image">
+    <img src="img/AR.svg" alt="Image 1">
+    <h2 class="event-title">A R Rahman Live in Concert</h2>
+</div>
+<div class="event-para">
+    <p style="font-size: 25px;font-family: Sunflower;font-size: 25px;color: black;">
+        Get ready for an amazing live concert in Paris 
+        featuring the renowned 
+        musician Ar Rahman, brought to you by Shruthileyah.
+         Join us at Accor Arena for a memorable night of 
+         fantastic music and rhythms</p>
+</div>
+<div class="time-content">
+    <img class="time-img" style="margin-top: 35px; margin-left: 60px; float:left;" src="./img/event-timeimage.svg" alt="">
+    <h3 style="margin-left: 140px; font-family: Sunflower; font-size: 25px;font-weight: 400; margin-top: 20px;">Time</h3>
+    <h3 style="margin-left: 140px; color: #DE5E27; font-family: Sunflower; font-size: 30px;font-weight: 500; ">Friday,12th July 2024,IST 6 PM</h3>
+</div>    
+<div class="Venue-content">        
+    <img class="Venue-img" style="margin-top: 35px; margin-left: 60px;float:left;" src="./img/event-venu.svg" alt="">
+    <h3 style="margin-left: 140px; font-family: Sunflower; font-size: 25px;font-weight: 400; margin-top: 20px;">Venue</h3>
+    <h3 style="margin-left: 140px; color: #DE5E27; font-family: Sunflower; font-size: 30px;font-weight: 500; ">PS Park,Erode</h3>
+</div>          
+<div class="About-title" >
+    <h2>About this Concert</h2>
+</div>
+<div class="about-content">
+    <p>
+        "Prepare to be mesmerized by the musical genius of A.R.
+        Rahman as he takes center stage for an unforgettable 
+        evening of music and magic. With a career spanning 
+        decades, Rahman has composed timeless melodies 
+        that have captured the hearts of millions worldwide."
+    </p>
+</div>
+
+<div class="booking-timeing">
+  <div
+    id="booking-end-message"
+    style="padding-top: 50px">
+    <h2>Booking will end on July 12th at 6:00 PM</h2>
+    <p>Time left to book this event</p>
+  </div>
+
+  <div id="countdown"></div>
+  <div class="time-row">
+    <div class="column">Days</div>
+    <div class="column">Hours</div>
+    <div class="column">Minutes</div>
+    <div class="column">Seconds</div>
+</div>
+  <div class="date-time"><p>Date & Time</p></div>
+  <div id="start-date"></div>
+  <h3 id="end-date"></h3>
+</div>
+<!-- this file java script code add bottom -->
+
+<div class="ticket-container">
+    <div>
+        <h2 id="event-place">A R Rahman Live in Concert</h2>    
+        <h3 id="event-date"><img src="img/uim_calender.svg" alt="">Friday,12th July 2024.</h3>
+        <h4 id="event-location"><img src="img/mdi_location.svg" alt="">Chennai</h4>
+    </div>  
+          
+    <div style="position: absolute; width: 800px; left: 400px; top: 25px; ">
+        <div class="ticket-details">
+            <span class="ticket-price"></span>
+            <div class="quantity-controls">
+                <div class="total-price">
+                    <span style="margin-right: 500px; font-size: 30px;">Normal</span>
+                    <span id="totalAmount" >₹0</span>
+                </div>
+                <button id="subtractTicket">-</button>
+                <span id="ticketCount">0</span>
+                <button id="addTicket">+</button>
+            </div>
+        </div>
+        <div class="ticket-details">
+            <span class="ticket-price"></span>
+            <div class="quantity-controls">
+                <div class="total-price">
+                    <span style="margin-right: 480px; font-size: 30px;">Premium</span>
+                    <span id="premiumTotalAmount">₹0</span>
+                </div>
+                <button id="subtractPremiumTicket">-</button>
+                <span id="premiumTicketCount">0</span>
+                <button id="addPremiumTicket">+</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<script src="arrahman.js" defer></script>
+
+<div class="your-card">        
+    <img class="your-card-img" style="margin-top: 5px; margin-left: 20px;float:left;" src="Img/mdi_cart.svg" alt="">
+    <h3 style="margin-left: 40px; font-family: Sunflower; font-size: 25px;font-weight: 500; margin-top: 15px;">Your Cart</h2>
+</div>
+<div class="event-city">  
+    <div class="city-marathon">
+        <div class="card" style="width: 25rem; border-radius: 20px;height: 300px;">
+            <img src="img/ar2.svg" class="card-img-top" alt="...">
+            <div class="card-body" style="width: 30rem; border-radius: 20px;">
+                <p id="event-place" style="position: absolute; margin-top: 80px;left:50px;font:bold;">A R Rahman Live in Concert</p> 
+                <p id="event-date"><img  style="position: absolute; top: 180px; left:10px"  src="Img/mdi_location.svg" alt=""><h6 style="position: absolute; top:139px; left:60px" >Friday,12th July 2024.</h6></p>
+                <p id="event-location"><img style="position: absolute; margin-top: 100px;"  src="Img/uim_calender.svg" alt=""><h6 style="position: absolute; top:189px; left:60px" >Chennai</h6></p>
+                <div class="total-price">
+                    <span id="eventtotalAmount" style="position: absolute;left:280px; margin-top: 15px; top:160px" >₹0</span>
+                </div>        
+            </div>
+        </div>
+    </div>
+    <section class="card-grab">
+        <div class="card" style="position: absolute;   width: 25rem; border-radius: 20px;width: 413px; height: 450px;left:-340px;top:40px;background-color: rgb(249, 246, 246);">
+            <div class="card-body">
+                <h5 class="card-title">Grab Your  <span style="color:#DE5E27"> Tickets</span> </h5>
+                <div id="eventAmount">
+                    <div><h6 class="card-subtitle mb-2 text-muted">A R Rahman Concert Tickets</h6></div>
+                    <div class="total-price">
+                        <!-- <span id="eventAmount">₹0</span> -->
+                    </div>
+                </div>     
+                <p class="card-text">Location:Erode</p>
+                <p class="card-text">Friday,12 July</p>
+                <p class="card-text">2024</p>
+                <hr width="60px">
+                <div id="charges">
+                    <p class="card-text">Extra charges</p>
+                    <p class="card-text" id="extra-charges">25</p>
+                </div>
+                <div id="charges">
+                    <p class="card-text">Total amount</p>
+                    <p id="eventcharges" class="card-text">₹0</p>
+                </div>
+                <div class="card-sub-btn" id="btn" style="position: absolute;width: 120px; left:150px;top:280px">
+                    <!-- <a href="PaymentUPI.HTML"> -->
+                        Book Now
+                    </a>
+                   </div>
+            </div>
+        </div> 
+    </section>
+</div>
+
+<div class="dote-line">
+</div>
+<div class="text">Other Events</div>
+<div class="row">
+    <div class="column">
+      <img src="./img/event-Component 8.svg" alt="Image 1">
+    </div>
+    <div class="column">
+      <img src="./img/event-Component 7.svg" alt="Image 2">
+    </div>
+    <div class="column">
+      <img src="./img/event-Component 10.svg" alt="Image 3">
+    </div>
+  </div>
+
+
+<!-- footer -->
+<div class="container">
+<div class="background-card">
+  <img src="./img/event-cards-m.svg" alt="" />
+</div>
+<div class="tickethub">
+  <img class="ticket-img" src="Img/event-tickethub.svg" alt="" />
+</div>
+
+<div class="container-text">
+<footer class="footer">
+<div class="footer-column">
+  <a href="#">Home</a>
+  <a href="#">Explore</a>
+  <a href="#">Choose Category</a>
+  <a href="#">Upcoming events</a>
+  <a href="#">Popular events</a>
+</div>
+<div class="footer-column">
+  <a href="#">Search by city</a>
+  <a href="#">search for events</a>
+  <a href="#">Wishlist</a>
+  <a href="#">Review</a>
+  <a href="#">Term and Conditions</a>
+</div>
+<div class="footer-column">
+  <a href="#">Payment policy</a>
+  <a href="#">Workshops</a>
+  <a href="#">Fests</a>
+  <a href="#">Sports</a>
+  <a href="#">Technical Coues</a>
+</div>
+</footer>
+
+
+<div class="social-ions">
+  <h3 style="font-weight: 900">Follow Us</h3></br>
+  <div class="icons-social" style="display: flex; margin-top: 50px; margin-left: -80px; word-spacing: 80px; gap: 20px;">
+  <img src="./img/event-instagram.svg" alt="" />
+  <img src="./img/event_facebook.svg" alt="" />
+  <img src="./img/event-linkedin.svg" alt="" />
+  <img src="img/event-twitter.svg" alt="">
+</div>
+</div>
+</div>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <!-- timecount -->
+  <script>
+    function updateMonthAndDate(startDate, endDate) {
+      var start = new Date(startDate);
+      var end = new Date(endDate);
+      var startMonth = start.toLocaleString("default", { month: "long" });
+      var startDateFormatted = start.getDate() + ", " + start.getFullYear();
+      var endMonth = end.toLocaleString("default", { month: "long" });
+      var endDateFormatted = end.getDate() + ", " + end.getFullYear();
+      document.getElementById("start-date").innerText =  "Starting Time:Friday, " +  startMonth +  " " +   startDateFormatted +
+        "  6.00 PM (IST)"; //only display the time
+      document.getElementById("end-date").innerText ="Ending Time:Friday " + endMonth + " " + endDateFormatted
+       + "  7.00 PM (IST)";//only display the time
+    }
+
+    function updateCountdown(endDate) {
+      var targetDate = new Date(endDate);
+      // Set end time to 6 PM
+      targetDate.setHours(18, 0, 0, 0);
+
+      var timer = setInterval(function () {
+        var now = new Date();
+        var distance = targetDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML =
+          "<span class='countdown-part'>" +
+          days +
+          "d </span>" +
+          "<span class='countdown-part'>" +
+          hours +
+          "h </span>" +
+          "<span class='countdown-part'>" +
+          minutes +
+          "m </span>" +
+          "<span class='countdown-part'>" +
+          seconds +
+          "s </span>";
+
+        if (distance < 0) {
+          clearInterval(timer);
+          document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    }
+    //starting date ,ending date changes
+    updateMonthAndDate("July 12, 2024", "July 12, 2024");
+    // Change the end time to 6 PM
+    updateCountdown("June 12, 2024");
+  </script>
+</body>
+</html>

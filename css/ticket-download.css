@@ -1,0 +1,288 @@
+body {
+  background: linear-gradient(180deg, #ff6161 0%, #ffffff 100%);
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 730px;
+  top: -1px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.payment-title {
+  width: 1200px;
+  top: 150px;
+  left: 991px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.payment-content {
+  position: absolute;
+  width: 1077.6px;
+  height: 32.81px;
+  top: 232px;
+  left: 281px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.payment-slip {
+  color: #ffc806;
+  width: 412px;
+  height: 30px;
+  top: 53px;
+  left: 528px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 34px;
+  justify-content: center;
+  margin-left: 550px;
+}
+
+.get-ticket {
+  width: 414px;
+  height: 28px;
+  top: 53px;
+  left: 511px;
+  gap: 0px;
+  opacity: 0px;
+  color: #ffc806;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  justify-content: center;
+  margin-left: 550px;
+}
+
+.total-color {
+  color: #fccf31;
+}
+
+.ticket-details {
+  position: absolute;
+  background: #f8f9fb;
+  width: 700px;
+  height: 280px;
+  top: 250px;
+  left: 2%;
+  gap: 0px;
+  border-radius: 12px;
+  border: 1px solid white;
+  opacity: 0px;
+  margin-left: 400px;
+}
+
+.D-1,
+.D-2,
+.D-3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px;
+}
+
+button {
+  background: linear-gradient(180deg, #fb7373 0%, #fdbdbd 60.5%);
+  width: 250px;
+  height: 50px;
+
+  left: 1060px;
+  gap: 0px;
+  border: 1px solid white;
+  border-radius: 24px;
+  opacity: 0px;
+  margin-left: 1200px;
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 620px;
+  /* margin-bottom: 2px; */
+}
+
+.ticket-image {
+  margin-left: 250px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Additional styling for ticket polygons and images */
+
+.marathon-image {
+  position: absolute;
+  width: 837px;
+  height: 417px;
+  top: 7px;
+  left: 375px;
+  gap: 0px;
+  opacity: 0px;
+}
+.event-details {
+  position: absolute;
+  width: 350px;
+  height: 300px;
+  left: 150px;
+  z-index: 1;
+}
+.Event-name {
+  position: absolute;
+  width: 300px;
+  height: 39px;
+  top: 2px;
+  gap: 0px;
+  opacity: 0px;
+  color: #2a2545;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38.73px;
+  text-align: left;
+}
+.Concert-Name {
+  position: relative;
+  top: 50px;
+}
+.address {
+  position: relative;
+  top: 15px;
+}
+.date {
+  position: relative;
+  top: 15px;
+}
+.door-open {
+  position: relative;
+  top: 15px;
+}
+.ticket-count {
+  position: relative;
+  top: 15px;
+}
+.total-price {
+  position: relative;
+  top: 15px;
+}
+.payment-Id {
+  position: relative;
+  top: 15px;
+}
+span {
+  position: absolute;
+  width: 127px;
+  height: 28px;
+  top: 255px;
+  left: 41px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+}
+
+.blue-banner {
+  position: absolute;
+  width: 424.1px;
+  height: 417px;
+  top: 7px;
+  left: 785px;
+  gap: 0px;
+  opacity: 0px;
+  transform: rotate(-179.92 deg);
+}
+.white-banner {
+  position: absolute;
+  width: 410px;
+  height: 417px;
+  top: 7px;
+  left: 133px;
+  gap: 0px;
+  opacity: 0px;
+}
+.cy-line-right {
+  position: absolute;
+  width: 45.1px;
+  height: 147.87px;
+  top: 300px;
+  left: 775.45px;
+  gap: 0px;
+  border-radius: 18px 0px 0px 0px;
+  opacity: 0px;
+  transform: rotate(1.1deg);
+}
+.cy-line-left {
+  position: absolute;
+  width: 55.1px;
+  height: 134.87px;
+  top: 4.13px;
+  left: 500.66px;
+  gap: 0px;
+  border-radius: 18px 0px 0px 0px;
+  opacity: 0px;
+  transform: rotate(1.1deg);
+}
+.bb-triangle {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 398px;
+  left: 825px;
+  gap: 0px;
+  opacity: 0px;
+}
+.bb-dotline {
+  position: absolute;
+  width: 376.98px;
+  height: 200px;
+  top: 202px;
+  left: 650px;
+  gap: 0px;
+  border: 2px;
+  opacity: 0px;
+  z-index: 1;
+}
+.bb-line1 {
+  position: absolute;
+  width: 234.09px;
+  height: 200px;
+  top: 7px;
+  left: 770px;
+  gap: 0px;
+  border: 1px;
+  opacity: 0px;
+  z-index: 1;
+}
+.bb-line2 {
+  position: absolute;
+  width: 128.46px;
+  height: 130px;
+  top: 7px;
+  left: 838px;
+  border: 1px;
+  z-index: 1;
+}
+.bb-line3 {
+  position: absolute;
+  width: 190.42px;
+  height: 170px;
+  top: 7px;
+  left: 806px;
+  border: 1px;
+  z-index: 1;
+}
+.bb-line4 {
+  position: absolute;
+  width: 190.42px;
+  height: 147px;
+  top: 7px;
+  left: 814px;
+  border: 1px;
+  z-index: 1;
+}
+
+#divisionToDownload {
+  background-color: yellow;
+}

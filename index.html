@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CubeVents-TicketHub.com</title>
+
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/register.css">
+  <!-- <link rel="stylesheet" href="css/reg-proffessor.css">
+  <link rel="stylesheet" href="css/reg-speaker.css">
+   -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+  <script defer src="./script.js"></script>
+
+</head>
+
+<body>
+
+  <div class="nav-container">
+    <nav id="mainNavbar" class="navbar-new">
+      <div class="navbar-container container">
+        <input type="checkbox" id="menuToggle" />
+        <div class="mobile-view">
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <a href="#logo" class="logo-link-mobile">
+            <img src="logo/Logo.svg" alt="Logo" class="logo-img-mobileview" />
+          </a>
+        </div>
+        <ul class="menu-items">
+          <li>
+            <div class="search">
+              <img src="logo/search1.png" class="search-icon" /><input class="search-input" type="search"
+                placeholder="search for event or location" />
+            </div>
+          </li>
+          <li><a href="cart.html" id="wishlistLink">My Card </a><img src="logo/mdi_heart.svg" /></li>
+          <li><a href="#"  >Explore </a><img src="logo/Vector.svg" /></li>
+          <li><a href="#" id="createEventBtn">    <button class="explore-button">Create Event</button></a></li>
+          
+          <li>
+            <a style="cursor: pointer;" id="loginBtn" class="login" >Log in</a>
+          </li>
+          <!-- <li><a href="reg-signup.html" style="cursor: pointer;" class="newuser" onclick="togglePopup()" id="newUserLink">New User?</a></li> -->
+          <li><a href="reg-signup.html" style="cursor: pointer;" class="newuser"  id="newUserLink">New User?</a></li>
+
+        </ul>
+        <a href="#logo" class="logo-link">
+          <img src="logo/Logo.svg" alt="Logo" class="logo-img" />
+        </a>
+        <div class="search">
+          <img src="logo/search1.png" class="search-icon" /><input class="search-input" type="search"
+            placeholder="search for event or location" />
+        </div>
+      </div>
+    </nav>
+    
+  </div>
+
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="logo">
+        TICKET HUB.COM
+      </div>
+      <div class="container-login">
+        <form id="loginForm" action="/login" method="POST">
+          <div class="form-group">
+            <span class="material-symbols-outlined">
+              mail
+            </span>
+            <input style="padding-left: 40px;" type="email" id="loginEmail" name="email" required
+              placeholder="Enter your Email">
+            <span id="loginEmailError" class="error"></span><br>
+          </div>
+          <div class="form-group">
+            <span class="material-symbols-outlined">
+              lock
+            </span>
+            <input style="padding-left: 40px;" type="password" id="loginPassword" name="password" required
+              placeholder="Enter your Password">
+            <span id="loginPasswordError" class="error"></span><br>
+          </div>
+          <div class="sign">
+            <input type="submit" value="Log in">
+          </div>
+        </form>
+<!--   
+        <div id="loginRegisterLink">
+          Don't have an account yet? <a id="registerLink" onclick="togglePopup()" href="#newUserLink">Register here!</a>
+        </div> -->
+
+        <div id="loginRegisterLink">
+          Don't have an account yet? <a id="registerLink"  href="reg-signup.html">Register here!</a>
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>
+  
+
+<script> 
+
+// Function to save professor registration data
+  function saveProfessorData() { 
+     console.log('Professor registration data saved');
+  }
+  
+  // Define the registerProfessor function
+function registerProfessor() {
+  
+    console.log("Professor registration logic goes here");
+}
+function registerSpeaker() {
+  
+  console.log("Speaker registration logic goes here");
+}function registerStudent() {
+  
+  console.log("Student registration logic goes here");
+}
+  </script>
+
+
+
+
+
+  <!-- banner starts -->
+  <section class="container-1">
+    <div class="container">
+      <!-- <img class="circle-2" src="img/full circle.svg" alt=""> -->
+      <div class="banner-img">
+        <img src="img/banner.svg" alt="" srcset="" />
+        <!-- <img class="circle-1" src="img/half circle.svg" alt="">
+      <img class="circle-4" src="img/full circle.svg" alt="">
+      <img class="circle-3" src="img/half circle.svg" alt=""> -->
+      </div>
+      <div class="wing-img">
+        <img src="./img/wing.svg" alt="" />
+      </div>
+      <div class="banner-details">
+        <h1 class="banner-heading">
+          Instant Access To Amazing <br />Events, <br />Just A Click Away!
+        </h1>
+        <p class="banner-para">
+          "From concerts to conferences, all <br />
+          within your reach, Book your tickets <br />online, with effortless
+          ease. Unlock <br />the excitement, reserve your seat,On <br />
+          our platform, events become <br />complete."
+        </p>
+      </div>
+      <div class="vector-img">
+        <img src="img/vector.svg" alt="" />
+      </div>
+      <div class="calender-img">
+        <img src="img/calender.svg" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- banner ends -->
+
+  <!-- Swiper Container start -->
+
+  <section class="container-explore">
+
+    <div style="margin-bottom: 30px;">
+      <h4   class="explore-link" style="text-align: center;font-weight: 700; font-family:Poppins;font-size: 45px;"> <a
+          href="#" id="loginBtn" class="loginBtn">  Explore More <span style="font-size: 20px;"> Swipe <i
+              class="ri-arrow-right-line"></i> </span> </a> </h4>
+    </div>
+
+    <div class="carousel">
+      <div class="slide">
+
+        <div class="single-img">
+          <img src="img/slider1.svg" alt="Avatar" class="image">
+          <div class="img-overlay">
+
+            <div class="event-explore">
+              <h4 class="event-name"> City Marathon </h4>
+
+              <div style="display: flex;justify-content: space-evenly;">
+
+                <div class="event-location" style="font-size: 14px;padding-top: 5px;">
+
+                  <p style="padding-bottom: 5px;"> <i class="ri-map-pin-line"></i> Erode </p>
+                  <p style="padding-left: 5px;"> <i class="ri-calendar-line"></i> 12th Jun</p>
+                </div>
+                <div class="view-btn" style="padding-top: 10px;">
+                  <a href="Marathon.html"><button class="button-view" style="color: #FFF;"> View </button></a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="single-img">
+          <img src="img/slider2.svg" alt="Avatar" class="image">
+          <div class="img-overlay">
+
+            <div class="event-explore">
+              <h4 class="event-name"> Music Concert </h4>
+
+              <div style="display: flex;justify-content: space-evenly;">
+
+                <div class="event-location" style="font-size: 14px;padding-top: 5px;">
+
+                  <p style="padding-bottom: 5px;"> <i class="ri-map-pin-line"></i> Chennai </p>
+                  <p> <i class="ri-calendar-line"></i> 12th Jun</p>
+                </div>
+                <div class="view-btn" style="padding-top: 10px;">
+                  <a href="AR rahman.html"><button class="button-view" style="color: #FFF;"> View </button></a>
+                </div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="single-img">
+          <img src="img/slider3.svg" alt="Avatar" class="image">
+          <div class="img-overlay">
+
+            <div class="event-explore">
+              <h4 class="event-name"> Technical Workshop </h4>
+
+              <div style="display: flex;justify-content: space-evenly;">
+
+                <div class="event-location" style="font-size: 14px;padding-top: 5px;">
+
+                  <p style="padding-bottom: 1px;"> <i class="ri-map-pin-line"></i> Chennai </p>
+                  <p> <i class="ri-calendar-line"></i> 12th Jun</p>
+                </div>
+                <div class="view-btn" style="padding-top: 10px;">
+                  <a href="Workshop.html"><button class="button-view" style="color: #FFF;"> View </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="single-img">
+          <img src="img/slider4.jpg" alt="Avatar" class="image">
+          <div class="img-overlay">
+
+            <div class="event-explore">
+              <h4 class="event-name"> Hackathon </h4>
+
+              <div style="display: flex;justify-content: space-evenly;">
+
+                <div class="event-location" style="font-size: 14px;padding-top: 5px;">
+
+                  <p style="padding-bottom: 1px;"> <i class="ri-map-pin-line"></i> Kovai </p>
+                  <p> <i class="ri-calendar-line"></i> 8th April </p>
+                </div>
+                <div class="view-btn" style="padding-top: 10px;">
+                  <a href="Hackathon.html"><button class="button-view" style="color: #FFF;"> View </button></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="single-img">
+          <img src="img/slider5.svg" alt="Avatar" class="image">
+          <div class="img-overlay">
+
+            <div class="event-explore">
+              <h4 class="event-name"> Cricket League </h4>
+
+              <div style="display: flex;justify-content: space-evenly;">
+
+                <div class="event-location" style="font-size: 14px;padding-top: 5px;">
+
+                  <p style="padding-bottom: 1px;"> <i class="ri-map-pin-line"></i> Trichy </p>
+                  <p> <i class="ri-calendar-line"></i> 8th April </p>
+                </div>
+                <div class="view-btn" style="padding-top: 10px;">
+                  <button class="button-view" style="color: #FFF;"> View </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="single-img">
+          <img src="img/slider6.svg" alt="Avatar" class="image">
+          <div class="img-overlay">
+
+            <div class="event-explore">
+              <h4 class="event-name"> Festa Junina </h4>
+
+              <div style="display: flex;justify-content: space-evenly;">
+
+                <div class="event-location" style="font-size: 14px;padding-top: 5px;">
+
+                  <p style="padding-bottom: 1px;padding-right: 5px;"> <i class="ri-map-pin-line"></i> SRM,Chennai </p>
+                  <p> <i class="ri-calendar-line"></i> 21st April </p>
+                </div>
+                <div class="view-btn" style="padding-top: 10px;">
+                  <button class="button-view" style="color: #FFF;"> View </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <button id="pre" style="display: none;">prev</button>
+    <button id="nxt" style="display: none;">next</button>
+
+  </section>
+  <!-- Swiper JS -->
+  <script src="slider.min.js"></script>
+
+
+  <script>
+
+    const $ = document.querySelector.bind(document);
+    const a = slider($(".carousel"), {
+      show: 3,
+      to: 1,
+      responsive: [
+        {
+          breakpoint: 900,
+          settings: {
+            show: 3,
+            to: 3,
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            show: 3,
+            to: 3,
+          }
+        },
+        {
+          breakpoint: 200,
+          settings: {
+            show: 2,
+            to: 1
+          }
+        }
+      ],
+      auto: { delay: 2500 },
+    });
+
+    a.click($('#pre'), -1)
+    a.click($("#nxt"))
+  </script>
+
+  <!-- Swiper Container end -->
+
+  <!-- Trending town starts -->
+
+  <section class="container">
+    <div class="trending-banner">
+      <img src="img/trending banner.svg" alt="" />
+      <h1 class="trending-heading">
+        TRENDING<br />
+        <span class="trending-span"> IN TOWN</span>
+      </h1>
+      <div class="trending-location">
+        <img src="img/location.svg" alt="" />
+      </div>
+      <div class="trending-music">
+        <h1 class="music-details">Music Concert</h1>
+        <button class="music-button">Click to view details</button>
+      </div>
+    </div>
+    <!-- <div class="circle-5">
+      <img src="img/full circle.svg" alt="">
+    </div> -->
+    <div class="trending-town">
+      <img src="img/trending-1.svg" alt="" />
+      <img src="img/trending-2.svg" alt="" />
+      <img src="img/trending-3.svg" alt="" />
+    </div>
+  </section>
+
+  <!-- Trending town ends -->
+
+  <!-- Trending town ends -->
+
+  <!-- CATEGORY  starts-->
+  <section class="category-container">
+    <div class="category-title">
+      <h1>
+        <span style="color: #000000; font-size: 55px">OUR</span>
+        <span style="color: #de5e27; font-weight: bolder; font-size: 55px">FEATURED CATEGORY</span>
+      </h1>
+    </div>
+    <div class="category-topline">
+      <img src="./img/CATEGORY-TopLine.svg" class="media-image-vector4" alt="Image 7" />
+    </div>
+    <div class="category-bottomline">
+      <img src="./img/CATEGORY-bottomLine.svg" class="media-image-vector5" alt="Image 7" />
+    </div>
+ 
+    <div class="Entertainment">
+      <img src="./img/CATEGORY-Entertainment svg.svg" class="media-image-1" alt="Image " />
+      <h3 style="color: #d72f29;margin-left: 30px; margin-top: 40px;" class="media-text1">ENTERTAINMENT</h3>
+    </div>
+    <div class="Workshopss">
+      <img src="./img/CATEGORY-Workshops.svg" class="media-image-2" alt="Image " />
+      <h3 style="color: #d72f29;margin-left: 100px; margin-top: 10px;" class="media-text2">WORKSHOPS</h3>
+    </div>
+    <div class="Fests">
+      <img src="./img/CATEGORY-Fests.svg" class="media-image-3" alt="Image 7" />
+      <h3 style="color: #d72f29;margin-left: 100px; margin-top: 40px;" class="media-text3">FESTS</h3>
+    </div>
+    <div class="sports">
+      <img src="./img/CATEGORY-sports.svg" class="media-image-4" alt="Image 7" />
+      <h3 style="color: #d72f29;margin-left: 70px; margin-top: 30px;" class="media-text4">SPORTS</h3>
+    </div>
+    <div class="Technical">
+      <img src="./img/CATEGORY-Technical.svg" class="media-image-5" alt="Image 7" />
+      <h3 style="color: #d72f29;margin-left: 30px; margin-top: 30px;" class="media-text5">TECHNICAL COURSE</h3>
+    </div>
+  </section>
+
+  <!-- CATEGORY  end-->
+
+  <!-- why Tickethub starts  -->
+
+  <section class="container">
+    <div class="why-banner">
+      <img src="img/why banner.svg" alt="" />
+    </div>
+    <div class="why">
+      <img src="img/why.svg" alt="" />
+    </div>
+    <div class="why-details">
+      <h1 class="why-heading">WHY TICKETHUB?</h1>
+      <p class="why-para">
+        Paperless tickets <br />
+        Instant Confirmation <br />
+        Time Saving <br />
+        Wide selection <br />
+        Convenience <br />
+        Accessibility <br />
+        Event reminders
+      </p>
+      <p class="why-dot">
+        <img src="img/dot.svg" alt="" /> <br />
+        <img src="img/dot.svg" alt="" /> <br />
+        <img src="img/dot.svg" alt="" /> <br />
+        <img src="img/dot.svg" alt="" /> <br />
+        <img src="img/dot.svg" alt="" /> <br />
+        <img src="img/dot.svg" alt="" /> <br />
+        <img src="img/dot.svg" alt="" /> <br />
+      </p>
+      <p class="why-line">
+        <img src="img/Line.svg" alt="" />
+      </p>
+    </div>
+  </section>
+  <!-- why Tickethub ends  -->
+
+<!-- footer start -->
+<section class="container-footer">
+  <div class="">
+    <div class="footer-background-card">
+      <img src="./img/footer-card.svg" alt="" />
+    </div>
+    <div class="footer-tickethub">
+      <img class="ticket-img" src="./img/footer-tickethub.svg" alt="" />
+      <h2 class="footer-ticket-text">TICKETHUB.COM</h2>
+    </div>
+    <div class="footer-book-now">
+      <img src="./img/footer-Book now.svg" alt="" />
+    </div>
+    <footer class="footer">
+      <div class="footer-column">
+        <a href="#">Home</a>
+        <a href="#">Explore</a>
+        <a href="#">Choose Category</a>
+        <a href="#">Upcoming events</a>
+        <a href="#">Popular events</a>
+      </div>
+      <div class="footer-column">
+        <a href="#">Search by city</a>
+        <a href="#">search for events</a>
+        <a href="#">Wishlist</a>
+        <a href="#">Review</a>
+        <a href="#">Term and Conditions</a>
+      </div>
+      <div class="footer-column">
+        <a href="#">Payment policy</a>
+        <a href="#">Workshops</a>
+        <a href="#">Fests</a>
+        <a href="#">Sports</a>
+        <a href="#">Technical Coues</a>
+      </div>
+    </footer>
+    <div class="social-ions">
+      <h3 style="font-weight: 900">Follow Us</h3>
+      <img src="./img/cat-instagram.svg" alt="" />
+      <img src="./img/cat-facebook.svg" alt="" />
+      <img src="./img/cat-linkedin.svg" alt="" />
+      <img src="img/x twitter.svg" alt="">
+    </div>
+  </div>
+</section>
+<!-- footer end -->
+
+  
+
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  const studentModal = document.getElementById('studentModal');
+  const registerStudentBtn = document.querySelector('.register-student-btn');
+  const closeBtn = document.querySelector('.close-sub'); // Assuming this closes the student modal
+
+  if (registerStudentBtn) {
+      registerStudentBtn.addEventListener('click', function() {
+          studentModal.style.display = 'block';
+      });
+  }
+
+  if (closeBtn) {
+      closeBtn.addEventListener('click', function() {
+          studentModal.style.display = 'none';
+      });
+  }
+
+  window.addEventListener('click', function(event) {
+      if (event.target === studentModal) {
+          studentModal.style.display = 'none';
+      }
+  });
+});
+
+</script>
+
+
+
+<script src="script-popup.js"></script>
+  <script src="script-studentmodal.js"></script>
+  <script src="Rej Script/script.js"></script>
+  <script src="Rej Script/proffesor.js"></script>
+  <script src="Rej Script/spekaer.js"></script>
+</body>
+
+</html>

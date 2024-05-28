@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(252, 234, 215);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: veh; 
+    margin: 0; 
+}
+
+.user-details {
+    width: 854px;
+    height: 225px;
+    margin-bottom: 30px; /* Add margin to create a gap */
+    border-radius: 13px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2); 
+    background-color: white;
+}
+
+.user-details h2,h4{
+    margin-left: 35px;
+   
+}
+
+.user-details h4{
+ color: gray;
+}
+.grab-tickets{
+    width: 854px;
+    height: 300px;
+    border-radius: 13px 13px 13px 13px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2); 
+    background-color: white;
+}
+.grab-tickets h2{
+    margin-left: 35px;
+}
+.event-name-amount{
+    display: flex;
+    justify-content: space-around;
+    color: gray;
+   
+}
+button{
+    width: 200px;
+height: 50px;
+border-radius: 10px 10px 10px 10px;
+
+opacity: 0px;
+margin-top: 19px;
+}
+.event-button{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+   /* Media Queries for responsiveness */
+   @media (max-width: 1200px) {
+    .user-details, .grab-tickets {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .event-name-amount {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .event-name-amount div {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .event-button button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .user-details, .grab-tickets {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .user-details, .grab-tickets {
+        padding: 15px;
+    }
+
+    .user-details h2, .grab-tickets h2 {
+        font-size: 1.5em;
+    }
+
+    .user-details h4 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 360px) {
+    .user-details h2, .grab-tickets h2 {
+        font-size: 1.2em;
+    }
+
+    .user-details h4 {
+        font-size: 0.9em;
+    }
+
+    .event-name-amount {
+        font-size: 0.9em;
+    }
+
+    button {
+        height: 40px;
+        font-size: 1em;
+    }
+}

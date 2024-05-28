@@ -1,0 +1,215 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+ /* Style for the container */
+ .container-login {
+  background-color: #fff;
+  /* max-width: 600px; */
+  width: 81%;
+  padding: 40px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 50px 50px;
+}
+
+/* Style for the form group */
+.form-group {
+  margin-bottom: 30px;
+  position: relative; /* Position relative for icon positioning */
+}
+
+/* Style for the icon */
+.material-symbols-outlined {
+  position: absolute;
+  left: 15px; /* Adjust the left position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #888; /* Adjust the icon color */
+}
+
+/* Style for the input fields */
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 5px); /* Adjust the width to accommodate the icon */
+  padding: 10px;
+  border: 2px solid #cccccc;
+  border-radius: 18px;
+  box-sizing: border-box;
+  height: 54px;
+  padding-left: 50px; /* Adjust the left padding to prevent text overlap with the icon */
+}
+
+/* Hover effect for input fields */
+input:hover {
+  border-color: #F6496F;
+  border-radius: 25px;
+}
+
+/* Placeholder style */
+::placeholder {
+  color: rgb(40, 136, 165);
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #FFF6B7 0%, #F6496F 100%);
+
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Error message style */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.logo {
+  width: 90%;
+  padding: 21px; /* Adjusted padding for proportional height */
+  border-radius: 50px 50px 0px 0px;
+  background: linear-gradient(90deg, #FFF6B7 0%, #F6496F 100%);
+
+  color: white;
+  text-align: center;
+  height: 60px;
+}
+.rej{
+
+margin: 5px;
+padding: 10px;
+}
+
+
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dd-button {
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 10px 30px 10px 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+}
+
+.dd-button:hover {
+  background-color: #eeeeee;
+}
+
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  list-style-type: none;
+}
+
+.dd-input + .dd-menu {
+  display: none;
+} 
+
+.dd-input:checked + .dd-menu {
+  display: block;
+} 
+
+.dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-menu li:hover {
+  background-color: #f6f6f6;
+}
+
+.dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+
+.dd-menu li.divider{
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+/* 
+sub login  start  */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+
+  margin: 10% auto;
+  padding: 20px;
+
+  width: 50%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* 
+sub login end   */
+
+

@@ -1,0 +1,243 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/reg-signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+
+    
+    <style>
+        .password-container {
+            position: relative;
+        }
+        .field-icon {
+            position: absolute;
+            top: 38%;
+            transform: translateY(-50%);
+            right: 7px; /* Adjust according to your preference */
+            cursor: pointer;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container" style="width: 100%;">
+        <div class="container-form" style="background-image: url(./img/Vector\ 7.png);">
+            <div class="stuenthead">
+                <div class="logo">
+                    <h4 id="logo"><img src="img/Logo.svg" alt=""></h4>
+                </div>
+                <div class="head-register" style="text-align: center;">
+                    <h4> Sign Up  </h4>
+                </div>
+                <div class="container">
+                    <form id="signupRegistrationForm" action="/signup-registration" method="POST" enctype="multipart/form-data"> 
+                        <div class="photo" style="text-align: center;">
+                            <label for="photoUpload" class="upload-label">
+                                <img src="./img/reg-uploadimage.svg" alt="" id="photoImage" style="cursor: pointer;">
+                            </label>
+                            <!-- Hidden file input -->
+                            <input type="file" id="photoUpload" name="photoUpload" style="display: none;">
+                            
+                        </div>
+                        <div class="form-group" style="display: flex;justify-content: space-between;">
+                            <div style="width: 45%;"> 
+                                <input type="text" id="signupFirstName" name="firstName" required minlength="6" placeholder="First Name">
+                                <span id="signupFirstNameError" class="error"></span>
+                            </div>
+                            <div style="width: 45%;"> 
+                                <input type="text" id="signupLastName" name="lastName" required minlength="6" placeholder="Last Name">
+                                <span id="signupLastNameError" class="error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group" style="display: flex;justify-content:space-between;"> 
+                            <div style="width: 45%;">
+                                <input type="email" id="signupEmail" name="email" required placeholder="Email address">
+                                <span id="signupEmailError" class="error"></span>
+                            </div>
+                            <div style="width: 45%;">
+                                <input type="tel" id="signupPhonenumber" name="phoneNumber" required pattern="[0-9]{10}" placeholder="Phone Number">
+                                <span id="signupPhonenumberError" class="error"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group" style="display: flex;justify-content: space-between;">
+                            <div style="width: 45%;"> 
+                                <div class="password-container">
+                                     <input type="password" id="signupPassword" name="password" required placeholder="Create New Password">
+                                    
+                                    <span id="toggle-password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                    <span id="signupPasswordError" class="error"></span> 
+                                   
+                                </div>
+                            </div>
+                            <div style="width: 45%;">
+                                <div class="password-container">
+                                    <input type="password" id="signupPasswordconf"  required placeholder="Confirm Password">
+                                
+                                    <span id="toggle-password-conf" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                    <span id="signupPasswordconfError" class="error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="stuentcheckbox">
+                            <div> 
+                                <input type="checkbox" id="signupAgree" name="agree">
+                                <label for="generalAgree">I agree to <a style="color: red;" href="#">Terms & Conditions</a></label>
+                            </div>
+                            <div id="generalUser"> <a style="color: red;cursor: pointer;"  id="myBtn" class="login">Already a user?</a></div>
+                            <!-- <button id="myBtn">Open Modal</button> -->
+
+                        </div>
+                        <!-- <div class="sign"><input type="submit" value="Sign up"> </div> -->
+                        <div class="sign"><input style="border-radius: 20px;" type="submit"  value="Sign up"> </div> 
+
+                        <div class="google-btn" style="text-align: center;">
+                            <p style="padding: 0;">   or   </p>
+                            <p style="padding: 0">  Sign up using   </p>
+                            <button type="button" class="login-with-google-btn" >
+                            </button>
+                        </div>
+
+                      
+
+                    </form>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    <div class="cirlcee-img">
+        <img class="img-elipse" src="img/Ellipse 5.png">
+        <img class="img-elipsenew" src="img/Ellipse 6.png">
+        <img class="ploygen" src="img/Polygon 1.png">
+        <a href="javascript:history.back()">  
+            <img class="left-ploygen" src="img/mingcute_arrow-up-fill.png">
+        </a>
+    </div>
+
+
+<!-- The Modal -->
+
+    
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="logo">
+        TICKET HUB.COM
+      </div>
+      <div class="container-login">
+        <form id="loginForm" action="/login" method="POST">
+
+              <div class="form-group relative-position">
+                <span class="material-icons-outlined mail-icon">mail</span>
+                <input type="email" id="loginEmail" name="email" required placeholder="Enter your Email">
+                <span id="loginEmailError" class="error"></span><br>
+            </div>
+            <div class="form-group relative-position">
+                <span class="material-icons-outlined lock-icon">lock</span>
+                <input type="password" id="loginPassword" name="password" required placeholder="Enter your Password">
+                <span id="loginPasswordError" class="error"></span><br>
+            </div>
+
+          <div class="sign">
+            <input type="submit" value="Log in">
+          </div>
+        </form>
+<!--   
+        <div id="loginRegisterLink">
+          Don't have an account yet? <a id="registerLink" onclick="togglePopup()" href="#newUserLink">Register here!</a>
+        </div> -->
+
+        <div id="loginRegisterLink">
+          Don't have an account yet? <a id="registerLink"  href="reg-signup.html">Register here!</a>
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>
+  
+       <script>
+       
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+           
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const togglePassword = document.getElementById("toggle-password");
+            const passwordField = document.getElementById("signupPassword");
+            togglePassword.addEventListener("click", function() {
+                const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
+                passwordField.setAttribute("type", type);
+                this.classList.toggle("fa-eye");
+                this.classList.toggle("fa-eye-slash");
+            });
+        });
+    </script>
+          <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const togglePassword = document.getElementById("toggle-password-conf");
+            const passwordField = document.getElementById("signupPasswordconf");
+            togglePassword.addEventListener("click", function() {
+                const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
+                passwordField.setAttribute("type", type);
+                this.classList.toggle("fa-eye");
+                this.classList.toggle("fa-eye-slash");
+                console.log("togglePassword:", togglePassword);
+                console.log("passwordField:", passwordField);
+            });
+        });
+    </script>
+
+
+    <script src="Rej Script/signup.js"></script>
+
+</body>
+</html>
+

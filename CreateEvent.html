@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/createevent.css">
+       
+        <link rel="stylesheet" href="./css/dropdown-CreateEvent.css">
+    
+    <link rel="stylesheet" href="./css/dropdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="/event" method="POST" enctype="multipart/form-data"> 
+    <div class="background">
+    <div class="createevent-content" id="content">
+        <div>
+            <img src="./img/LeftArrow.svg" type="button" alt="Back" class="prevbtn">
+            <h1 class="title">Create your Own <span style="color:#FFFFFF;">Event</span></h1>
+        </div>
+
+        <div class="grid-container-outer" id="grid-container-outer">
+            <div class="outer-item">
+            <img src="./img/PageOne.png"alt="PageOne" class="PageOne">
+            </div>
+
+            <div class="outer-item">
+             <div class="grid-container"id="grid-container">
+           
+                <div class="grid-item">
+                    <h2 class="label">Category <span class="error" id="category"></span></h2>
+                    <div class="select-menu" id="select-menu">
+                        <!-- <div class="select-btn">
+                        <span class="sBtn-text"id="sBtn-text"></span>
+                        <i class="fa-solid fa-angle-down fa-xl" style="color: #000000;"></i>
+                        </div>
+                        
+                        <ul class="dropdown-elements">
+                        <li class="dropdown-element"><span class="option-text">Music</span></li>
+                        <li class="dropdown-element"><span class="option-text">Dance</span></li>
+                        <li class="dropdown-element"><span class="option-text">Sports</span></li>
+                        <li class="dropdown-element"><span class="option-text">Workshop</spang></li>
+                        </ul> -->
+                        <select name="category" class="dropdown-menu">
+                            <option name="category"  value=""></option>
+                            <option id="dropdown-element1" value="Music">Music</option>
+                            <option id="dropdown-element2" value="Dance">Dance</option>
+                            <option id="dropdown-element3" value="Sports">Sports</option>
+                            <option id="dropdown-element4" value="Workshop">Workshop</option>
+                          </select>
+                    </div>
+                    
+                </div>
+                <div class="grid-item">
+                    <h2 class="label">Event <span class="error" id="events"></span></h2> 
+                    <input type="text" name="eventName" class="input-type" id="event">
+                   
+                </div>
+                <div class="grid-item">
+                    <h2 class="label">Event Date  <span class="error"id="eventdates"></span></h2>
+                    <input type="date" name="eventDate" class="input-type" id="eventdate">
+                   
+                </div>
+            
+            
+                <div class="grid-item">
+                    <h2 class="label">Event Time <span class="error"id="eventtimes"></span></h2>
+                    <input type="time" name="eventTime" class="input-type" id="eventtime">
+                    
+                </div>
+                <div class="grid-item">
+                    <h2 class="label">Event Location <span class="error"id="eventlocations"></span></h2>
+                    <input type="text"  name="eventLocation" class="input-type" id="eventlocation">
+                    
+                </div>
+                <div class="grid-item">
+                    <h2 class="label">City <span class="error"id="citys"></span></h2>
+                    <input type="text" name="city" class="input-type"id="city">
+                    
+                </div>
+            
+            
+                <div class="grid-item">
+                    <h2 class="label">Event Organizer <span class="error"id="eventorganizers"></span></h2>
+                    <input type="text" name="organizer"  class="input-type"id="eventorganizer">
+                    
+                </div>
+                <div class="grid-item">
+                    <h2 class="label">Mobile Number <span class="error"id="mobilenumbers"></span></h2>
+                    <input type="text" name="mobileNumber" class="input-type" id="mobilenumber">
+                    
+                </div>
+                <div class="grid-item">
+                    <h2 class="label">Organizer Address <span class="error"id="organizeraddresss"></span></h2>
+                    <input type="text" name="organizerAddress"  class="input-type"id="organizeraddress">
+                    
+                </div>
+                <button type="button" class="nextbutton" id="button10" onclick="page2()">Next<i class="fa-solid fa-arrow-right fa-xl" style="color: #000000;"></i></button>
+             </div>
+             
+            </div>
+            
+        </div>
+        <button type="button" class="nextbutton" id="button11" onclick="page2()">Next<i class="fa-solid fa-arrow-right fa-xl" style="color: #000000;"></i></button>
+    </div>
+     </div>
+      
+
+<!--------------------------------------------------------------------------------->
+
+<div class="createevent-content2" id="content2">
+  
+    <div>
+        <img src="./img/LeftArrow.svg" type="button" onclick="page1()" alt="Back" class="prevbtn">
+        <h1 class="title">Create your Own <span style="color:#FFFFFF;">Event</span></h1>
+    </div>
+
+    <div class="grid-container-outer" id="grid-container-outer2">
+        <div class="outer-item">
+        <img src="./img/PageTwo.png"alt="PageOne" class="PageOne">
+        </div>
+
+        <div class="outer-item">
+         <div class="grid-container"id="grid-container2">
+       
+            <div class="grid-item">
+                <h2 class="label">Pricing Category<span class="error"id="pricingcategorys"></span></h2>
+                <input type="text" name="pricingCategory" class="input-type" id="pricingcategory">
+                
+            </div>
+            <div class="grid-item">
+                <h2 class="label">Platinum <span class="error"id="platinums"></span></h2>
+                <input type="text" name="Platinum" class="input-type"id="platinum">
+               
+            </div>
+            <div class="grid-item">
+                <h2 class="label">Gold<span class="error"id="golds"></span></h2>
+                <input type="text" name="gold" class="input-type" id="gold">
+                
+            </div>
+       
+            <div class="grid-item">
+                <h2 class="label">Silver<span class="error"id="silvers"></span></h2>
+                <input type="text" name="Silver" class="input-type"id="silver">
+                
+            </div>
+            <div class="grid-item">
+                <h2 class="label">Bronze <span class="error"id="bronzes"></span></h2>
+                <input type="text" name="bronze" class="input-type" id="bronze">
+               
+            </div>
+            <div class="grid-item">
+                <h2 class="label">Free Tickets <span class="error"id="freeticket"></span></h2>
+                <div class="select-menu1"id="select-menu1">
+                    <!-- <div class="select-btn1"id="select-btn1">
+                    <span class="sBtn-text1"id="sBtn-text1"></span>
+                    <i class="fa-solid fa-angle-down fa-xl" style="color: #000000;"></i>
+                    </div>
+                    <div data-name="freetickets">
+                    <ul class="dropdown-elements1">
+                        <li class="dropdown-element1"><span class="option-text1">Available</span></li>
+                        <li class="dropdown-element1"><span class="option-text1">Not Available</span></li>
+                    </ul>
+                </div> -->
+
+                <select name="freeTickets" class="dropdown-menu">
+                    <option  value=""></option>
+                    <option id="dropdown-element5" value="Available">Available</option>
+                    <option id="dropdown-element6" value="Not Available">Not Available</option>
+                  </select>
+                </div>
+               
+            </div>   
+            <div class="grid-item" id="grideventdescription">
+                <h2 class="label">Event Description<span class="error"id="eventdescriptions"></span></h2>
+                <textarea class="input-type" name="eventDescription"  id="eventdescription" rows="4" cols="50"></textarea>
+               
+            </div>   
+          </div>
+        </div>
+    </div>
+    <button type="button" class="nextbutton" onclick="page3()">Next<i class="fa-solid fa-arrow-right fa-xl" style="color: #000000;"></i></button>
+</div>
+
+
+<!--------------------------------------------------------------------------------->
+
+<div class="createevent-content3" id="content3">
+    <div>
+        <img src="./img/LeftArrow.svg" type="button" onclick="page2()" alt="Back" class="prevbtn">
+        <h1 class="title">Create your Own <span style="color:#FFFFFF;">Event</span></h1>
+    </div>
+
+    <div class="grid-container-outer" id="grid-container-outer3">
+        <div class="outer-item3">
+        <img src="./img/PageThree.png"alt="PageOne" class="PageOne">
+        </div>
+        
+        <div class="outer-item3">
+         <h2 class="bannertext"id="bannertext">Upload Event Banner<span class="error"id="error"></span></h2>
+         <div class="Upload" id="Upload" style="background-image: url(./img/Uploadimage.png);"> <input type="file" name="eventBanner" id="fileToUpload"></div>
+        
+         <div class="termsandcondition"id="termsandcondition-div"><span class="error"id="tnc"></span><input type="checkbox"id="termsandcondition"class="checkbox"> <label>I agree to <span style="color: #FFFFFF;"><u>Terms &Conditions</u></span></label></div>
+         <div class="errmsg"id="errmsg"><center>*Fill all the fields*</center></div>
+         <button type="submit" class="submit" id="finishbutton" onclick="return checkreq()">Finish</button>
+        </div>       
+    </div>
+</div>
+</form>
+<script src="./Rej Script/createevent.js"></script>
+</body>
+</html>
+
+

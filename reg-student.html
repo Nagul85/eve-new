@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Rejistration</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .password-container {
+            position: relative;
+        }
+        .field-icon {
+            position: absolute;
+            top: 38%;
+            transform: translateY(-50%);
+            right: 7px; /* Adjust according to your preference */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="width: 100%;">
+        <div class="container-form" style="background-image: url(./img/Vector\ 7.png);">
+            <div class="stuenthead">
+                <div class="logo">
+                    <h4 id="logo"><img src="img/Logo.svg" alt=""></h4>
+                </div>
+                <div class="head-register" style="text-align: center;">
+                    <h4> Student Registration </h4>
+                </div>
+                <div class="container">
+                    <form id="studentRegistrationForm" action="/student-registration" method="POST" enctype="multipart/form-data" > 
+                        <div class="photo" style="text-align: center;">
+                            <label for="photoUpload" class="upload-label">
+                                <img src="./img/reg-uploadimage.svg" alt="" id="photoImage" style="cursor: pointer;">
+                            </label>
+                            <!-- Hidden file input -->
+                            <input type="file" id="photoUpload" name="photoUpload" style="display: none;">
+                            <!-- Image with onclick event to trigger file input click -->
+                            <!-- <img src="./img/reg-uploadimage.svg" alt="" id="photoImage" onclick="document.getElementById('photoUpload').click();" style="cursor: pointer;"> -->
+                        </div>
+                        
+                        <div class="form-group" style="display: flex;justify-content: space-between;">
+                            <div style="width: 45%;"> 
+                                <input type="text" id="studentName" name="firstName" required minlength="6" placeholder="First Name">
+                                <span id="studentNameError" class="error"></span>
+                            </div>
+                            <div style="width: 45%;"> 
+                                <input type="text" id="studentLastName" name="lastName" required minlength="6" placeholder="Last Name">
+                                <span id="studentNameError" class="error"></span>
+                            </div>
+                        </div>
+                        <div class="form-group" style="display: flex;justify-content:space-between;"> 
+                            <div style="width: 45%;">
+                                <input type="email" id="studentEmail" name="email" required placeholder="Email address">
+                                <span id="studentEmailError" class="error"></span>
+                            </div>
+                            <div style="width: 45%;"> 
+                                <input type="text" id="studentdepartment" name="department" required minlength="6" placeholder="Department">
+                                <span id="studentNameError" class="error"></span>
+                            </div>
+                        </div>
+                        <div class="form-group" style="display: flex;justify-content:space-between;"> 
+                             <div style="width: 45%;">
+                                <input type="tel" id="studentPhoneNumber" name="phoneNumber" required pattern="[0-9]{10}" placeholder="Phone Number">
+                                <span id="studentPhoneNumberError" class="error"></span>
+                            </div>
+                            <div style="width: 45%;">
+                                <input type="tel" id="studentrejisterNumber" name="registerNumber" required pattern="[0-9]{10}" placeholder="Register Number">
+                                <span id="studentPhoneNumberError" class="error"></span>
+                            </div>
+                        </div>
+                        <!-- May 07 update Starts  -->
+                        <div class="form-group" style="display: flex;justify-content:space-between;" >
+                            <div style="width: 45%;">
+                                <div class="password-container">
+                                    <input type="password" id="studentPassword" name="password" required placeholder="New Password">
+                                    <span id="toggle-password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                    <span id="studentPasswordError" class="error"></span>
+                                </div>
+                            </div>
+                            <div style="width: 45%;">
+                                <div class="password-container">
+                                    <input type="password" id="studentPasswordconf"  required placeholder="Confirm Password">
+                                    <span id="toggle-password-conf" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                    <span id="studentPasswordError" class="error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- update ends -->
+                        <div id="stuentcheckbox">
+                            <div> 
+                                <input type="checkbox" id="studentAgree" name="agree">
+                                <label for="studentAgree">I agree to <a style="color: red;" href="#">Terms & Conditions</a></label>
+                            </div>
+                            <div id="studentUser"> <a style="color: red;" href="login.html">Already a user?</a></div>
+                        </div>
+                        <div class="sign"><input type="submit" value="Sign up"> </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cirlcee-img">
+        <img class="img-elipse" src="img/Ellipse 5.png">
+        <img class="img-elipsenew" src="img/Ellipse 6.png">
+        <img class="ploygen" src="img/Polygon 1.png">
+        <a href="javascript:history.back()">  
+            <img class="left-ploygen" src="img/mingcute_arrow-up-fill.png">
+        </a>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const togglePassword = document.getElementById("toggle-password");
+            const passwordField = document.getElementById("studentPassword");
+            togglePassword.addEventListener("click", function() {
+                const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
+                passwordField.setAttribute("type", type);
+                this.classList.toggle("fa-eye");
+                this.classList.toggle("fa-eye-slash");
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            const togglePassword = document.getElementById("toggle-password-conf");
+            const passwordField = document.getElementById("studentPasswordconf");
+            togglePassword.addEventListener("click", function() {
+                const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
+                passwordField.setAttribute("type", type);
+                this.classList.toggle("fa-eye");
+                this.classList.toggle("fa-eye-slash");
+                console.log("togglePassword:", togglePassword);
+                console.log("passwordField:", passwordField);
+            });
+        });
+    </script>
+    <script src="Rej Script/script.js"></script>
+</body>
+</html>

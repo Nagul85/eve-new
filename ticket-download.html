@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link rel="stylesheet" href="css/ticket-download.css">
+    <script src="payment.js"></script>
+</head>
+
+<body>
+
+    <div id="contentToConvert" class="ticket" style="position: absolute; top: 100px;left:125px;">
+        <div class="event-details">
+            <h1 id="eventName" class="Event-name">Event Name</h1> <br>
+
+            <h3 class="Concert-Name">Concert Name </h3><br>
+            <h3 class="address">Address</h3>
+            <h2 class="date">15.06.2023</h2>
+            <h6 class="door-open">DOOR OPENS @6PM</h6>
+            <h3 class="ticket-count"><strong>Ticket Count</strong> <span id="ticketCount"></span></h3>
+            <h3 class="total-price">Total Price <span id="amount"></span> </h3>
+            <p class="payment-Id" ><strong>Payment ID</strong> <span id="paymentId"></span></p>
+
+            <!-- <h4>₹<script>
+                document.write(localStorage.getItem("totalAmountWithCharges")); 
+            </script></h4> -->
+        </div>
+
+        <img class="marathon-image" src="img/marathon.png" alt="marathon">
+        <img class="white-banner" src="img/Left white banner.png" alt="left side">
+        <img class="blue-banner" src="img/Right blue banner.png" alt="right side">
+    </div>
+
+    <div><button id="downloadBtn">Download</button></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#downloadBtn").on("click", function () {
+                domtoimage.toBlob(document.getElementById('contentToConvert')).then(function (blob) {
+                    saveAs(blob, 'Ticket For Marathon.png');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

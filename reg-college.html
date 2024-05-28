@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/reg-college.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .password-container {
+            position: relative;
+        }
+        .field-icon {
+            position: absolute;
+            top: 38%;
+            transform: translateY(-50%);
+            right: 7px; /* Adjust according to your preference */
+            cursor: pointer;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container" style="width: 100%;">
+        <div class="container-form" style="background-image: url(./img/Vector\ 7.png);">
+            <div class="stuenthead">
+                <div class="logo">
+                    <h4 id="logo"><img src="img/Logo.svg" alt=""></h4>
+                </div>
+                <div class="head-register" style="text-align: center;">
+                    <h4>  Organization/College Registration  </h4>
+                </div>
+                <div class="container">
+                    <form id="collegeRegistrationForm" action="/organization-registration" method="POST" enctype="multipart/form-data"> 
+                        <div class="photo" style="text-align: center;">
+                            <!-- Hidden file input -->
+                            <label for="photoUpload" class="upload-label">
+                                <img src="./img/reg-uploadimage.svg" alt="" id="photoImage" style="cursor: pointer;">
+                            </label>
+                            <!-- Hidden file input -->
+                            <input type="file" id="photoUpload" name="photoUpload" style="display: none;">
+                            
+                        </div>
+                        <div class="form-group" style="display: flex;justify-content: space-between;">
+
+                            <!-- 11-05 update start -->
+                            <div style="width: 45%;">
+                                <select style="    width: 100%;
+                                height: 36px;
+                                border-radius: 20px;    border: 1px solid #ccc;" input type="text" id="chooseyourfield" name="field" required>
+                                 <option value=""selected>  Choose your field       </option> 
+                  
+                                  <option value="Organization"> Organization 
+                                  </option>
+                                  <option value="College"> College   </option>
+                               
+                                  <!-- Add more options as needed -->
+                                </select>
+                                <span id="ProfessorcategoryError" class="error"></span>
+                              </div>
+                            <div style="width: 45%;"> 
+                                <input type="text" id="nameoffield" name="fieldName" required minlength="6" placeholder="Name of your field">
+                                <span id="nameoffieldError" class="error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group" style="display: flex;justify-content:space-between;"> 
+                            <div style="width: 45%;">
+                                <input type="email" id="collegeEmail" name="email" required placeholder="Email address">
+                                <span id="collegeEmailError" class="error"></span>
+                            </div>
+                            <div style="width: 45%;">
+                                <input type="tel" id="collegePhonenumber" name="phoneNumber" required pattern="[0-9]{10}" placeholder="Phone Number">
+                                <span id="collegePhonenumberError" class="error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group" style="display: flex;justify-content: space-between;">
+                            <div style="width: 45%;"> 
+                                <input type="text" id="positionName" name="position" required minlength="2" placeholder="Position">
+                                <span id="positionNameError" class="error"></span>
+                            </div>
+                            <div style="width: 45%;"> 
+                                <input style="border-radius: 20px;width: 92%;" type="url" id="websiteLink" name="websiteLink" required placeholder="Website Link">
+                                <span id="websiteLinkError" class="error"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group" style="display: flex;justify-content: space-between;">
+                            <div style="width: 45%;"> 
+                                <div class="password-container">
+                                     <input type="password" id="collegePassword" name="password" required placeholder="Create New Password">
+                                    
+                                    <span id="toggle-password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                    <span id="collegePasswordError" class="error"></span> 
+                                   
+                                </div>
+                            </div>
+                            <div style="width: 45%;">
+                                <div class="password-container">
+                                    <input type="password" id="collegePasswordconf"  required placeholder="Confirm Password">
+                                
+                                    <span id="toggle-password-conf" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                    <span id="collegePasswordError" class="error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="stuentcheckbox">
+                            <div> 
+                                <input type="checkbox" id="collegeAgree" name="agree">
+                                <label for="collegeAgree">I agree to <a style="color: red;" href="#">Terms & Conditions</a></label>
+                            </div>
+                            <div id="collegeUser"> <a style="color: red;" href="login.html">Already a user?</a></div>
+                        </div>
+                        <div class="sign"><input type="submit" value="Sign up"> </div>
+                    </form>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <div class="cirlcee-img">
+        <img class="img-elipse" src="img/Ellipse 5.png">
+        <img class="img-elipsenew" src="img/Ellipse 6.png">
+        <img class="ploygen" src="img/Polygon 1.png">
+        <a href="javascript:history.back()">  
+            <img class="left-ploygen" src="img/mingcute_arrow-up-fill.png">
+        </a>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const togglePassword = document.getElementById("toggle-password");
+            const passwordField = document.getElementById("collegePassword");
+            togglePassword.addEventListener("click", function() {
+                const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
+                passwordField.setAttribute("type", type);
+                this.classList.toggle("fa-eye");
+                this.classList.toggle("fa-eye-slash");
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            const togglePassword = document.getElementById("toggle-password-conf");
+            const passwordField = document.getElementById("collegePasswordconf");
+            togglePassword.addEventListener("click", function() {
+                const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
+                passwordField.setAttribute("type", type);
+                this.classList.toggle("fa-eye");
+                this.classList.toggle("fa-eye-slash");
+                console.log("togglePassword:", togglePassword);
+                console.log("passwordField:", passwordField);
+            });
+        });
+    </script>
+    <script src="Rej Script/college.js"></script>
+
+
+</body>
+</html>

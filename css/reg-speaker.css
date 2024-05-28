@@ -1,0 +1,303 @@
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"]
+ {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 2px solid #cccccc;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+input:hover {
+    border-color: #F6496F;
+    border-radius: 25px;
+}
+
+::placeholder {
+    color: rgb(133, 140, 151)}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #FFF6B7 0%, #F6496F 100%);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: medium;
+}
+
+#a5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically center */
+    margin: 20px;
+}
+
+#a5 > div {
+    display: flex; /* Enable flex layout */
+    align-items: center; /* Align items vertically center */
+}
+
+#a5 > div label {
+    margin-right: 10px; /* Add space between label and checkbox */
+}
+
+#a6:hover {
+     background: linear-gradient(90deg, #FFF6B7 0%, #F6496F 100%);
+}
+
+#a6 {
+    color: linear-gradient(90deg, #FFF6B7 0%, #F6496F 100%);
+}
+
+.logo {
+    max-width: 95%;
+    padding: 20px; /* Adjusted padding for proportional height */
+    border-radius: 50px 50px 0px 0px;
+    background: linear-gradient(90deg, #FFF6B7 0%, #F6496F 100%);
+    color: white;
+    text-align: center;
+    height: 40px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* SignupForm.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+ .container {
+    background-color: #fff;
+    max-width: 524px;
+    padding: 10px 40px  40px 40px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 50px 50px;
+} 
+
+.form-group {
+    margin-bottom: 30px;
+}
+#Firstlastname{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Firstlastname input[type="text"]{
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 2px solid #cccccc;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 2px solid #cccccc;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+input:hover {
+    border-color: #F6496F;
+    border-radius: 25px;
+}
+#Firstlastname input:hover {
+    border-color: #F6496F;
+border-radius: 25px;
+}
+
+::placeholder {
+    color: rgb(133, 140, 151);
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #FFF6B7 0%, #F6496F 100%);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: medium;
+}
+
+#spkercheckbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically center */
+    margin: 20px;
+}
+
+#spkercheckbox > div {
+    display: flex; /* Enable flex layout */
+    align-items: center; /* Align items vertically center */
+}
+
+#spkercheckbox > div label {
+    margin-right: 10px; /* Add space between label and checkbox */
+}
+
+/* #spkeruser:hover {
+     background: linear-gradient(90deg, #FFF6B7 0%, #F6496F 100%);
+} */
+
+#spkeruser {
+    color: linear-gradient(90deg, #FFF6B7 0%, #F6496F 100%);
+}
+
+.logo {
+    max-width: 95%;
+    padding: 20px; /* Adjusted padding for proportional height */
+    border-radius: 50px 50px 0px 0px;
+    background: linear-gradient(90deg, #FFF6B7 0%, #F6496F 100%);
+    color: white;
+    text-align: center;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.photo img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto; 
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.logo img {
+    width: 100px;
+    height: 40px;
+
+}
+
+
+       
+
+.cirlcee-img  .img-elipse{
+    position: absolute;
+    bottom: 57%;
+    left: 1%;
+  }
+  
+  .cirlcee-img  .img-elipsenew{
+    position: absolute;
+    bottom: 55%;
+    left: 65%;
+  }
+  
+  .cirlcee-img .ploygen {
+    position: absolute;
+    bottom: 6%;
+      left: 1%;
+  }
+  
+  .cirlcee-img .left-ploygen {
+    position: absolute;
+    bottom: 75%;
+      left: 7%;
+  }
+  
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .cirlcee-img  .img-elipse{
+    display: none;
+  }
+  
+  .cirlcee-img  .img-elipsenew{
+    display: none;
+  }
+  
+  .cirlcee-img .ploygen {
+    display: none;
+  }
+  
+  .cirlcee-img .left-ploygen {
+    display: none;
+  }
+  
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .cirlcee-img  .img-elipse{
+    display: none;
+  }
+  
+  .cirlcee-img  .img-elipsenew{
+    display: none;
+  }
+  
+  .cirlcee-img .ploygen {
+    display: none;
+  }
+  
+  .cirlcee-img .left-ploygen {
+    display: none;
+  }
+  
+    
+  }
+  
+  
+  .password-container {
+      position: relative;
+  }
+  
+  .field-icon {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    right: 11px;
+    cursor: pointer;
+  }
+ 
+    @media screen and (max-width: 768px) {
+    .stuenthead {
+      width: 95%;
+      top: 0px;
+      position: absolute;
+    }
+  }
+  
+  

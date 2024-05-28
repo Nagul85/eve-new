@@ -1,0 +1,278 @@
+
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 2px solid #cccccc;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+input:hover {
+    border-color: #F6496F;
+    border-radius: 25px;
+}
+
+::placeholder {
+    color: rgb(133, 140, 151);
+}
+
+/* Button styles */
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #FFF6B7 0%, #F6496F 100%);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: medium;
+}
+
+/* Agreement section styles */
+#prfsrcheckbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+#prfsrcheckbox > div {
+    display: flex;
+    align-items: center;
+}
+
+/* Checkbox label styles */
+#prfsrcheckbox > div label {
+    margin-right: 10px;
+}
+
+/* Already a user section styles */
+#a6:hover {
+    background: linear-gradient(90deg, #FFF6B7 0%, #F6496F 100%);
+}
+
+#a6 {
+    color: linear-gradient(90deg, #FFF6B7 0%, #F6496F 100%);
+}
+
+/* Logo styles */
+.logo {
+    max-width: 95%;
+    padding: 20px;
+    border-radius: 50px 50px 0px 0px;
+    background: linear-gradient(90deg, #FFF6B7 0%, #F6496F 100%);
+    color: white;
+    text-align: center;
+    height: 40px;
+}
+
+.logo img {
+    width: 100px;
+    height: 40px;
+}
+
+/* Photo styles */
+.photo img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+/* Error message styles */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 1500px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+
+
+.container-form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* background-color: #f0f0f0;  */
+  } 
+  
+  .proffesorhead {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px; /* Adjust as needed */
+    z-index: 99999;
+  }
+  
+  .container {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group input {
+    width: calc(100% - 10px); /* Adjust for padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* border-radius: 5px; */
+    outline: none;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  #professorcheckbox {
+    margin-top: 20px;
+  }
+  
+  #professorcheckbox div {
+    display: flex;
+    align-items: center;
+  }
+  
+  #professorcheckbox div a {
+    color: red;
+  }
+  
+  #professoruser {
+    margin-left: auto;
+  }
+  
+  .sign input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(40, 136, 165);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sign input[type="submit"]:hover {
+    background-color: rgb(32, 115, 140);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .proffesorhead {
+      width: 95%;
+      top: 0px;
+      position: absolute;
+    }
+  }
+  
+  .cirlcee-img  .img-elipse{
+    position: absolute;
+    bottom: 57%;
+  }
+  
+  .cirlcee-img  .img-elipsenew{
+    position: absolute;
+    bottom: 55%;
+    left: 65%;
+  }
+  
+  .cirlcee-img .ploygen {
+    position: absolute;
+    bottom: 6%;
+      left: 1%;
+  }
+  
+  .cirlcee-img .left-ploygen {
+    position: absolute;
+    bottom: 75%;
+      left: 7%;
+  }
+  
+    /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .cirlcee-img  .img-elipse{
+    display: none;
+  }
+  
+  .cirlcee-img  .img-elipsenew{
+    display: none;
+  }
+  
+  .cirlcee-img .ploygen {
+    display: none;
+  }
+  
+  .cirlcee-img .left-ploygen {
+    display: none;
+  }
+  
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .cirlcee-img  .img-elipse{
+    display: none;
+  }
+  
+  .cirlcee-img  .img-elipsenew{
+    display: none;
+  }
+  
+  .cirlcee-img .ploygen {
+    display: none;
+  }
+  
+  .cirlcee-img .left-ploygen {
+    display: none;
+  }
+  
+    
+  }
+  
+
+        
+  .password-container {
+    position: relative;
+}
+
+.field-icon {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  right: 11px;
+  cursor: pointer;
+}
+

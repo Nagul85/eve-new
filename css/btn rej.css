@@ -1,0 +1,19 @@
+.dropdown-item{
+    color: white;
+    border: 2px solid #F4C4B8;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, rgba(255, 246, 183, 0.74) 0%, rgba(246, 65, 108, 0.91) 100%);
+
+}
+.dropdown-menu{
+    background-color: rgb(232, 158, 139);
+    border-radius: 15px;
+}
+.dropdown-item:hover{
+    font-size:large;
+    background-color: #F4C4B8;
+}
+#dropdownMenuButton1{
+    background: linear-gradient(135deg, rgba(255, 246, 183, 0.74) 0%, rgba(246, 65, 108, 0.91) 100%);
+}
